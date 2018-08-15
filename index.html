@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Port</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+   
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.css">
+
+  </head>
+  <body background="images/background.jpg">
+  <div class="con">
+  <div class="intro">
+    <div class="centerme">
+    <img class="image" src='images/me.jpg'>
+    <h2 class="name over">Marc Dwyer</h2>
+    <div class="social">
+      <i class="fa fa-github over"></i>
+      <i class="fa fa-facebook over"></i>
+      <i class="fa fa-twitter over"></i>
+    </div>
+    <div class='about'>
+     <h3 class="over" data-info="projects"> Projects </h3>
+      <h3 class="over" data-info="about"> About </h3>
+      <h3 class="over" data-info="stuff"> Stuff </h3>
+    </div>
+  </div>
+  </div>
+  <div class="content">
+      <div class="content1">
+          <div class="card card1">
+              <img src='images/youtube.png'>
+              <h2>Youtube Livestream Checker</h2>
+          </div>
+          <div class="card card2">
+            </div>
+            <div class="card card3">
+                </div>
+   </div>
+    <div class="card aboutme">
+        <h2>Brief About Me</h2>
+    </div>
+   </div>
+   </div>
+ 
+
+ 
+
+<script>
+const about = document.querySelectorAll('.about h3');
+const canvas = document.querySelector('.content');
+const canvas1 = document.querySelector('.content');
+const card1 = document.querySelector('.card1');
+const card2 = document.querySelector('.card2');
+const card3 = document.querySelector('.card3');
+about.forEach(item => item.addEventListener('click', toggled));
+
+function toggled() {
+  const data = this.dataset.info;
+    if (data == 'about') {
+        canvas.classList.toggle('a');
+    }
+    if (data == 'projects') {
+        canvas1.classList.toggle('a');
+    }
+
+
+}
+
+
+function init() {
+    canvas.classList.toggle('a');
+}
+setTimeout(init, 800);
+
+</script>
+
+  </body>
+</html>
