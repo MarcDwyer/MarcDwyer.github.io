@@ -1,17 +1,16 @@
 
 /* Space out content a bit */
 html {
-  font-family:'helvetica neue';
+    font-family: 'Roboto', sans-serif;
+
 }
 body {
-    margin: 0;
-    padding: 0;
-  color: white;
+  margin: 0;
+  padding: 0;
   overflow:hidden;
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
+
+  color: black;
   height: 100vh;
-  color: white; 
 }
 
 .con {
@@ -19,18 +18,23 @@ body {
   flex-wrap: nowrap;
   width: 100%;
   height: 100%;
+  background-color:rgba(250, 250, 250, 1);
+
 }
+
 .intro {
-  order: 0;
-  width: 15%;
+  top: 0;
+  left: 0;
+  width: 350px;
   display: block;
   height: 100%;
-  background-color:rgba(0, 0, 0, 0.7);
-}
-.centerme {
-  margin-top: 350px;
-  align-items: center;
+  background-color:rgba(250, 250, 250, 0.7);
+  border: solid 1px #E1E1E1;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro h2 {
@@ -41,26 +45,33 @@ body {
   opacity: 1;
 
 }
-
+.mg2 {
+  opacity: .45;
+}
+.mg2:hover {
+  opacity: 1;
+}
 .image {
   border-radius: 50%;
-  height: 100%;
-  width: 75%;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 15px;
   border: solid 3px red;
   animation: pulse 3s linear infinite;
 }
-
+.wut {
+  margin-top: 80%;
+}
 .content {
   order: 1;
-  width: 85%;
+  width: 90%;
   transition: transform 1s;
-  transform: translateX(+100%);
+  overflow-y: scroll;
+  background-color: rgba(250, 250, 250, 0.7);
 
     }
 
-.a {
-  transform: translateX(0);
-}
+
 @keyframes pulse {
 0% {
   box-shadow: 0px 0px 0px 0px red; }
@@ -89,20 +100,18 @@ body {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    
+}
+
+.content img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 286px;
+  width: 100%;
 }
 .card {
-    background-color: rgba(0, 0, 0, 0.95);
-    height: 850px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-}
-.card1 :first-child {
-    border-radius: 5px;
-    margin-top: 5px;
-    width: 75%;
- 
+  background-color: #FAFAFA;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card1 {
@@ -121,4 +130,82 @@ body {
 .aboutme {
     order: 4;
     width: 95%;
+}
+.card a {
+background-color: #6e5494;
+color: white;
+}
+
+.fa-bars {
+  margin-left: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 25px;
+  color: black;
+  z-index: 2;
+}
+.naver {
+  display: none;
+}
+
+@media only screen and (max-width: 715px) {
+
+.intro {
+  position: absolute;
+  color: white;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 0;
+  z-index: 1;
+  transition: 0.25s;
+  overflow: hidden;
+
+}
+.active {
+  background-color: rgba(0, 0, 0, .9);
+  width: 100%;
+
+}
+.content {
+  order: 0;
+  width: 100%;
+}
+.wut {
+  margin-top: 25px;;
+}
+.naver {
+  display: block;
+  background-color: #2E2F34;
+  opacity: 1;
+  height: 55px;
+  width: 100%;
+}
+.fa-bars {
+  color: white;
+}
+}
+
+@media only screen and (max-width: 1300px) {
+  .card1 {
+    width: 50%;
+  }
+  .card2 {
+    width: 50%;
+  }
+  .card3 {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .card1 {
+    width: 100%;
+  }
+  .card2 {
+    width: 100%;
+  }
+  .card3 {
+    width: 100%;
+  }
 }

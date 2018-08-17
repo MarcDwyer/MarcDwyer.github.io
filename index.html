@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -7,77 +7,90 @@
     <title>My Port</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-   
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="images/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="nodemodules/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
   </head>
-  <body background="images/background.jpg">
+  <body>
+      <div class="naver">
+    <i class="fa fa-bars"></i>
+</div>
+
   <div class="con">
-  <div class="intro">
-    <div class="centerme">
-    <img class="image" src='images/me.jpg'>
-    <h2 class="name over">Marc Dwyer</h2>
-    <div class="social">
+    <div class="intro">
+<div class="wut">
+    <img class="image" src='images/me.jpg'></img>
+    <h2 class="name mg">Marc Dwyer</h2>
+    <h5 class="name mg2">The Web Dev</h5>
+    <div class="social mg">
       <i class="fa fa-github over"></i>
       <i class="fa fa-facebook over"></i>
       <i class="fa fa-twitter over"></i>
     </div>
-    <div class='about'>
-     <h3 class="over" data-info="projects"> Projects </h3>
+    <div class='about mg'>
+     <h3  class="over" data-info="projects"> Projects </h3>
       <h3 class="over" data-info="about"> About </h3>
       <h3 class="over" data-info="stuff"> Stuff </h3>
     </div>
-  </div>
-  </div>
+    </div>
+    </div>
   <div class="content">
       <div class="content1">
-          <div class="card card1">
-              <img src='images/youtube.png'>
-              <h2>Youtube Livestream Checker</h2>
+          <div class="card card1 mt-4 seey">
+              <img class="card-img-top" src='images/newpls.png'>
+              <div class="card-body">
+              <h5 class="card-title">Project: Youtube Livestream Checker</h5>
+              <p class="card-text"> This is one of the first apps I created after learning the
+                  basics of JavaScript. It uses the Fetch API as well as the Youtube API to check if streamers
+                  are online. Once a request is sent using a Interval function and returns true a series of CSS animations
+                  will go off notifying the user of the streamers live status. This was my first project and had it in mind
+                  even before I started the Udacity's Web Development course.
+              </p>
           </div>
-          <div class="card card2">
+          <a target="_blank" href="https://github.com/RealRedChief/Youtube-Livestream-App" class="btn">Project Repo</a>
+          </div>
+          <div class="card card2 mt-4">
+              <img class="card img-top" src="images/memory.png">
+              <div class="card-body">
+              <h5 class="card-title">Project: A Game of Memory</h5>
+              <p class="card-text">
+                  This was my very first serious project. The project was tasked to me when taking Udacity's Front End
+                  Web Dev course. It being my first, I ended up using jQuery, even still, the code is unnecessarily convoluted. I like to
+                  look back on this project from time to time to see how far I've progressed in the 8 months I've been programming.
+              </p>
             </div>
-            <div class="card card3">
+            <a target="_blank" href="https://github.com/RealRedChief/GameofMemory" class="btn">Project Repo</a>
+          </div>
+            <div class="card card3 mt-4">
+                <img src="images/js30.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Project: JavaScript 30 Day Challenge</h5>
+                    <p class="card-text">This is honestly one of the most beneficial things I've ever done to learn JS. After searching
+                        through multiple forum sites on what it took for employers to hire new Junior Web Devs, I found that having a strong
+                        knowledge in pure JavaScript to be one of the most beneficial things. As a result, becoming an expert in JS is my
+                        current goal and I wont stop until I acheive this.
+                    </p>
+                </div>
+                <a target="_blank" href="https://github.com/RealRedChief/JS30" class="btn">Project Repo</a>
                 </div>
    </div>
-    <div class="card aboutme">
-        <h2>Brief About Me</h2>
+    <div class="card aboutme mt-5">
+        <div class="card-body"></div>
+        <h5 class="card-title">Brief About Me</h5>
     </div>
    </div>
    </div>
- 
 
- 
+
+
 
 <script>
-const about = document.querySelectorAll('.about h3');
-const canvas = document.querySelector('.content');
-const canvas1 = document.querySelector('.content');
-const card1 = document.querySelector('.card1');
-const card2 = document.querySelector('.card2');
-const card3 = document.querySelector('.card3');
-about.forEach(item => item.addEventListener('click', toggled));
-
-function toggled() {
-  const data = this.dataset.info;
-    if (data == 'about') {
-        canvas.classList.toggle('a');
-    }
-    if (data == 'projects') {
-        canvas1.classList.toggle('a');
-    }
-
-
-}
-
-
-function init() {
-    canvas.classList.toggle('a');
-}
-setTimeout(init, 800);
-
 </script>
-
+<script src="js/webapp.js"></script>
+<script src="nodemodules/jquery.3.3.1.js"></script>
+<script src="nodemodules/popper.min.js"></script>
+<script src="nodemodules/js/bootstrap.min.js"></script>
   </body>
 </html>
