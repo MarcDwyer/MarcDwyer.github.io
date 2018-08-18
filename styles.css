@@ -149,7 +149,7 @@ color: white;
   display: none;
 }
 
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 830px) {
 
 .intro {
   position: absolute;
@@ -177,12 +177,16 @@ color: white;
 }
 .naver {
   display: block;
-  background-color: #2E2F34;
+  background-color: #D5D5D6;
+  opacity: 0.5;
   opacity: 1;
   height: 55px;
   width: 100%;
 }
 .fa-bars {
+  color: black;
+}
+.white {
   color: white;
 }
 }
