@@ -3,9 +3,6 @@ const intro = document.querySelector('.intro');
 const fa = document.querySelector('i');
 
 
-
-
-
 menu.addEventListener('click', toggleme);
 
 function toggleme() {
@@ -21,4 +18,20 @@ function endcanvas(e) {
     intro.classList.toggle('active');
     fa.classList.toggle('white');
   }
+}
+
+
+window.addEventListener('keyup', unicorn);
+
+let empty = [];
+const secret = 'hireme';
+
+function unicorn(e) {
+
+empty.push(e.key);
+empty.splice(-secret.length - 1, empty.length - secret.length);
+
+if (empty.join('').includes(secret)) {
+  cornify_add();
+}
 }
