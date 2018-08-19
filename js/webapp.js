@@ -22,16 +22,12 @@ function endcanvas(e) {
 
 
 window.addEventListener('keyup', unicorn);
-
 let empty = [];
 const secret = 'hireme';
-
 function unicorn(e) {
-
-empty.push(e.key);
-empty.splice(-secret.length - 1, empty.length - secret.length);
-
-if (empty.join('').includes(secret)) {
-  cornify_add();
-}
+  empty.push(e.key);
+  empty.splice(-secret.length - 1, empty.length - secret.length);
+  if (empty.join('').includes(secret)) {
+    cornify_add();
+  }
 }
