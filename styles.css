@@ -172,6 +172,9 @@ color: white;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.aboutme {
+  text-align: center;
+}
 
 @media only screen and (max-width: 775px) {
 
@@ -205,6 +208,7 @@ color: white;
   opacity: 1;
   height: 55px;
   width: 100%;
+  border-style: none;
 }
 .fa-bars {
   color: black;
