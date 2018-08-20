@@ -31,3 +31,18 @@ function unicorn(e) {
     cornify_add();
   }
 }
+
+
+let last = window.pageYOffset;
+
+window.onscroll = function () {
+  if (window.innerWidth <= 780) {
+    const current = window.pageYOffset;
+    if (last >= current) {
+      menu.style.top = "0";
+    } else {
+      menu.style.top = "-50px";
+    }
+    last = current;
+  }
+}

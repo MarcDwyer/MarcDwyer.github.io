@@ -7,10 +7,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  overflow:hidden;
-
   color: black;
-  height: 100vh;
+  height: 100%;
 }
 
 .con {
@@ -18,8 +16,8 @@ body {
   flex-wrap: nowrap;
   width: 100%;
   height: 100%;
-  background-color:rgba(250, 250, 250, 1);
-
+  background-color:rgba(250, 250, 250);
+  height: 100vh;
 }
 
 .intro {
@@ -142,13 +140,11 @@ color: white;
 }
 
 .fa-bars {
-  margin-left: 15px;
-  margin-top: 15px;
-  cursor: pointer;
-  position: absolute;
-  font-size: 25px;
-  color: black;
-  z-index: 2;
+   margin-left: 15px;
+   margin-top: 15px;
+   cursor: pointer;
+   font-size: 25px;
+   color: black;
 }
 .naver {
   display: none;
@@ -178,44 +174,40 @@ color: white;
 
 @media only screen and (max-width: 775px) {
 
+.con {
+  height: 100%;
+}
 .intro {
   position: fixed;
-  color: white;
   margin-top: 0;
   top: 0;
   left: 0;
   width: 0;
   z-index: 1;
+  height: 100%;
   overflow-x: hidden;
-  height: 110%;
-
 }
 .active {
-  background-color: rgba(0, 0, 0, .9);
+  background-color:rgba(250, 250, 250);
   width: 100%;
-
-
 }
 .content {
-  order: 0;
   width: 100%;
+  margin-top: 55px;
 }
 
 .naver {
+  position: fixed;
   display: block;
-  background-color: #F6F6F6;
-  opacity: 0.5;
-  opacity: 1;
-  height: 55px;
+  background-color:rgba(250, 250, 250);
+  height: 50px;
   width: 100%;
   border-style: none;
+  top: 0;
+  z-index: 2;
+  transition: top 0.5s;
 }
-.fa-bars {
-  color: black;
-}
-.white {
-  color: white;
-}
+
 .marginme * {
   margin-top: 20px;
   margin-bottom: 20px;
