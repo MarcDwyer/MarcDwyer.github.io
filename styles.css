@@ -210,6 +210,7 @@ color: white;
   top: 0;
   z-index: 2;
   transition: top 0.5s;
+  box-shadow: 5px 10px:
 }
 
 .marginme * {

@@ -9,7 +9,7 @@ menu.addEventListener('click', toggleme);
 function toggleme() {
 
 intro.classList.toggle('active');
-menu.classList.toggle('white');
+fa.classList.toggle('white');
 }
 
 intro.addEventListener('transitionend', endcanvas);
