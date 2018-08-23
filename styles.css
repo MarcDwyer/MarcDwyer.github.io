@@ -26,6 +26,7 @@ body {
   left: 0;
   width: 300px;
   display: flex;
+  flex-direction: column;
   height: 100%;
   background-color:rgba(250, 250, 250,);
   border: solid 1px #E1E1E1;
@@ -172,9 +173,13 @@ color: white;
 .aboutme {
   text-align: center;
 }
+.construct {
+  margin-bottom: 5px;
+  width: 150px;
+  height: 150px;
+}
 
 @media only screen and (max-width: 775px) {
-
 .con {
   height: 100%;
 }
