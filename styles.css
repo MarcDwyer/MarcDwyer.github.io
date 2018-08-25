@@ -105,29 +105,29 @@ body {
 .content img {
   margin-left: auto;
   margin-right: auto;
-  height: 286px;
+  height: 225px;
   width: 100%;
 }
 .card {
   background-color: #FAFAFA;
   margin-left: auto;
   margin-right: auto;
-  marign-top: 15px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
 .card1 {
     order: 1;
-    max-width: 450px;
+    width: 33%;
 }
 .card2 {
     order: 2;
-    max-width: 450px;
+    width: 33%;
 
 }
 .card3 {
     order: 3;
-    max-width: 450px;
+    width: 33%;
 }
 .aboutme {
     order: 4;
