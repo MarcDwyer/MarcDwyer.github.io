@@ -105,7 +105,7 @@ body {
 .content img {
   margin-left: auto;
   margin-right: auto;
-  height: 286px;
+  height: 225px;
   width: 100%;
 }
 .card {
@@ -113,21 +113,37 @@ body {
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+<<<<<<< HEAD
+=======
+  margin-top: 15px;
+>>>>>>> 3ae6ee9c28521c56d45aa1fff9d0d7f7e8619acd
   margin-bottom: 15px;
 }
 
 .card1 {
     order: 1;
+<<<<<<< HEAD
     width: 29%;
 }
 .card2 {
     order: 2;
     width: 29%;
+=======
+    width: 33%;
+}
+.card2 {
+    order: 2;
+    width: 33%;
+>>>>>>> 3ae6ee9c28521c56d45aa1fff9d0d7f7e8619acd
 
 }
 .card3 {
     order: 3;
+<<<<<<< HEAD
     width: 29%;
+=======
+    width: 33%;
+>>>>>>> 3ae6ee9c28521c56d45aa1fff9d0d7f7e8619acd
 }
 .aboutme {
     order: 4;
