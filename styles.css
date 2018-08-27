@@ -110,24 +110,24 @@ body {
 }
 .card {
   background-color: #FAFAFA;
+  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
-  marign-top: 15px;
   margin-bottom: 15px;
 }
 
 .card1 {
     order: 1;
-    max-width: 450px;
+    width: 29%;
 }
 .card2 {
     order: 2;
-    max-width: 450px;
+    width: 29%;
 
 }
 .card3 {
     order: 3;
-    max-width: 450px;
+    width: 29%;
 }
 .aboutme {
     order: 4;
@@ -212,7 +212,7 @@ color: white;
   top: 0;
   z-index: 2;
   transition: top 0.5s;
-  box-shadow: 5px 10px:
+  box-shadow: 5px 10px;
 }
 
 .marginme * {
@@ -231,6 +231,11 @@ color: white;
     width: 50%;
   }
   .card3 {
+    order: 2;
+    width: 50%;
+  }
+  .card4 {
+    order: 3;
     width: 50%;
   }
 }
@@ -242,6 +247,9 @@ color: white;
     width: 100%;
   }
   .card3 {
+    width: 100%;
+  }
+  .card4 {
     width: 100%;
   }
 }
