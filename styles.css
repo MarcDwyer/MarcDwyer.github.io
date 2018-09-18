@@ -7,7 +7,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: black;
   height: 100vh;
   overflow: hidden;
 }
@@ -245,4 +244,13 @@ body {
   .card4 {
     width: 100%;
   }
+}
+
+.current {
+  background-color: #eee;
+  font-weight: bold;
+  text-align: center;
+  opacity: .85;
+  border-radius: 10px;
+  width: 175px;
 }

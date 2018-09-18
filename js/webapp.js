@@ -22,13 +22,27 @@ function endcanvas(e) {
 }
 
 
-window.addEventListener('keyup', unicorn);
-let empty = [];
-const secret = 'hireme';
-function unicorn(e) {
-  empty.push(e.key);
-  empty.splice(-secret.length - 1, empty.length - secret.length);
-  if (empty.join('').includes(secret)) {
-    cornify_add();
+
+const pic = document.querySelector('.image');
+
+pic.addEventListener('mouseover', current);
+pic.addEventListener('mouseout', current);
+
+function current(e) {  
+  const event = 'React-Redux'
+  if (e.type === 'mouseout') {
+    const span = document.querySelector('.current')
+    document.body.removeChild(span);
+  } else {
+  
+  const ele = document.createElement('div');
+  ele.classList.add('current');
+  ele.innerHTML = `<span>Currently Learning: ${event}.</span>`
+  document.body.appendChild(ele);
+  const horizon = e.pageX + 15;
+  const vert = e.pageY + -50;
+  ele.style.position = 'absolute';
+  ele.style.left = `${horizon}px`;
+  ele.style.top = `${vert}px`;
   }
 }
