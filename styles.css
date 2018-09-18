@@ -57,8 +57,8 @@ body {
   height: 225px;
   width: 225px;
   margin-bottom: 15px;
-  border: solid 3px red;
-  animation: pulse 3s linear infinite;
+  border: solid 3px #007bff;
+  animation: pulse 6s linear infinite;
 }
 .content {
   order: 1;
@@ -71,7 +71,7 @@ body {
 
 @keyframes pulse {
 0% {
-  box-shadow: 0px 0px 0px 0px red; }
+  box-shadow: 0px 0px 0px 0px #007bff; }
 25% {
   box-shadow: 0px 0px 25px 25px rgba(255, 0, 0, 0); }
 50% {
