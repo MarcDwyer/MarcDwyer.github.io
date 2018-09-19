@@ -1,3 +1,4 @@
+
 const menu = document.querySelector('.naver');
 const intro = document.querySelector('.intro');
 const fa = document.querySelector('i');
@@ -46,3 +47,12 @@ function current(e) {
   ele.style.top = `${vert}px`;
   }
 }
+
+
+function typed() {
+  new Typed(document.querySelector('.terminal'), {
+    strings: ['$ npm install marc-port-about^1000\n <br>`installing components...` ^1000\n <br>`Fetching from source...`', 'Name: Marc Dwyer <br> Specialty: Front End Development <br> Current Projects: 2 <br> Recently Finished: Stephen Griders React-Redux Udemy Course <br> Currently Work On: Shopping Website'],
+    typeSpeed: 30
+  })
+}
+typed();

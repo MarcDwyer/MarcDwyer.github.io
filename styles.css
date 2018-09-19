@@ -7,8 +7,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .con {
@@ -27,7 +25,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color:rgba(250, 250, 250,);
+  overflow-x: hidden;
+  background-color:rgba(250, 250, 250);
   border: solid 1px #E1E1E1;
   margin-left: auto;
   margin-right: auto;
@@ -129,10 +128,12 @@ body {
     width: 28%;
 }
 .aboutme {
-    order: 4;
-    width: 95%;
+    order: 0;
+    height: 450px;
 }
-
+.aboutme .card-body {
+  height: 350px;
+}
 
 .fa-bars {
    margin-left: 15px;
@@ -156,15 +157,11 @@ body {
   margin-right: 15px;
 }
 .social {
-
   width: 100%;
 }
 .marginme * {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-.aboutme {
-  text-align: center;
 }
 
 
@@ -253,4 +250,38 @@ body {
   opacity: .85;
   border-radius: 10px;
   width: 175px;
+}
+.theterminal {
+   background-color: black;
+   opacity: .85;
+   border-radius: 10px;
+   color:white;
+   border: solid black 1px;
+   margin: auto;
+   height: 350px;
+   width: 650px;
+  
+ }
+ .terminal {
+   margin-left: 10px;
+   margin-top: 10px;
+ }
+ .terminal:after {
+  visibility: visible;
+  content: '';
+  background-color: white ;
+  display: inline-block;
+  position: relative;
+  width: 0.1em;
+  height: 1.1em;
+  top: 3px;
+  left: 5px;
+  margin-left: 0;
+  -moz-animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
+  -webkit-animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
+  animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
+}
+
+.typed-cursor {
+  display:none;
 }
