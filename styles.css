@@ -252,6 +252,7 @@ body {
   width: 175px;
 }
 .theterminal {
+   display: flex;
    background-color: black;
    opacity: .85;
    border-radius: 10px;
@@ -260,11 +261,12 @@ body {
    margin: auto;
    height: 350px;
    width: 650px;
-  
+
  }
  .terminal {
    margin-left: 10px;
    margin-top: 10px;
+   overflow-x: hidden;
  }
  .terminal:after {
   visibility: visible;
@@ -284,4 +286,10 @@ body {
 
 .typed-cursor {
   display:none;
+}
+
+@media only screen and (max-width: 650px) {
+  .theterminal {
+    width: 350px;
+  }
 }
