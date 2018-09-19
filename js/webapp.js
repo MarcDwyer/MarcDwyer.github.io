@@ -51,7 +51,7 @@ function current(e) {
 
 function typed() {
   new Typed(document.querySelector('.terminal'), {
-    strings: ['$ npm install marc-port-about^1000\n <br>`installing components...` ^1000\n <br>`Fetching from source...`', 'Name: Marc Dwyer <br> Specialty: Front End Development <br> Current Projects: 2 <br> Recently Finished: Stephen Griders React-Redux Udemy Course <br> Currently Work On: Shopping Website'],
+    strings: ['$ npm install marc-port-about^1000\n <br>`installing components...` ^1000\n <br>`Fetching from source...`', 'Name: Marc Dwyer <br> Specialty: Front End Development <br> Current Projects: 2 <br> Recently Finished: Stephen Griders React-Redux Udemy Course <br> Currently Work On: React-Redux Shopping Website'],
     typeSpeed: 30
   })
 }
