@@ -129,7 +129,7 @@ body {
 }
 .aboutme {
     order: 0;
-    height: 450px;
+    border-style: none;
 }
 .aboutme .card-body {
   height: 350px;
