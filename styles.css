@@ -112,6 +112,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+  border-right: none;
+  border-left: none;
 }
 
 .card1 {
