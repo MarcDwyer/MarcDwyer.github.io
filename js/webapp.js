@@ -56,3 +56,10 @@ function typed() {
   })
 }
 typed();
+
+document.querySelector('.abt').addEventListener('click', scroller);
+
+
+function scroller() {
+  content.scrollTo(0, content.offsetHeight)
+}

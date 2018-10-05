@@ -7,17 +7,17 @@ html {
 body {
   margin: 0;
   padding: 0;
+
 }
 
 .con {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  height: 100%;
-  background-color:rgba(250, 250, 250);
   height: 100vh;
-}
+  background-color:rgba(250, 250, 250);
 
+}
 .intro {
   top: 0;
   left: 0;
@@ -108,6 +108,7 @@ body {
   width: 100%;
 }
 .card {
+  flex: 0 1 auto;
   background-color: #FAFAFA;
   margin-top: 15px;
   margin-left: auto;
@@ -301,6 +302,15 @@ body {
     width: 350px;
   }
 }
+@media only screen and (min-height: 1200px) {
+  .content1 {
+    height: 100%;
+  }
+   .card {
+     height: 100%;
+   }
+  }
+}
 .wut {
   color: black;
 }
@@ -308,4 +318,14 @@ body {
   color: inherit;
   opacity: .95;
   
+}
+.actualabout {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.para {
+  margin-right: auto;
+  margin-left: auto;
+  width: 650px;
 }
