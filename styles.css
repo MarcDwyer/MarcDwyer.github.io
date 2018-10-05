@@ -173,8 +173,21 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.actualabout {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.para {
+  margin-right: auto;
+  margin-left: auto;
+  width: 650px;
+}
 
 @media only screen and (max-width: 850px) {
+  .para {
+    width: 350px;
+  }
 .con {
   height: 100%;
 }
@@ -309,14 +322,4 @@ body {
   color: inherit;
   opacity: .95;
   
-}
-.actualabout {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.para {
-  margin-right: auto;
-  margin-left: auto;
-  width: 650px;
 }
