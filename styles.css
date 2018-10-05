@@ -302,15 +302,6 @@ body {
     width: 350px;
   }
 }
-@media only screen and (min-height: 1200px) {
-  .content1 {
-    height: 100%;
-  }
-   .card {
-     height: 100%;
-   }
-  }
-}
 .wut {
   color: black;
 }
