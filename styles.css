@@ -88,6 +88,7 @@ body {
   opacity: 1;
   cursor: pointer;
 }
+
 [data-info] {
   font-size: 17px;
 }
@@ -118,20 +119,24 @@ body {
 
 .card1 {
     order: 1;
-    width: 28%;
+    width: 22%;
 }
 .card2 {
     order: 2;
-    width: 28%;
+    width: 22%;
 
 }
 .card3 {
-    order: 3;
-    width: 28%;
+    order: 4;
+    width: 22%;
+}
+.card4 {
+  order: 3;
+  width: 22%;
 }
 .aboutme {
     order: 0;
-    height: 400px;
+    height: 350px;
     border-bottom: solid #E1E1E1 1px;
     border-top: solid #E1E1E1 1px;
 }
@@ -168,8 +173,7 @@ body {
   margin-bottom: 10px;
 }
 
-
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 850px) {
 .con {
   height: 100%;
 }
@@ -224,11 +228,11 @@ body {
     width: 50%;
   }
   .card3 {
-    order: 2;
+    order: 3;
     width: 50%;
   }
   .card4 {
-    order: 3;
+    order: 2;
     width: 50%;
   }
 }
@@ -262,7 +266,7 @@ body {
    border-radius: 10px;
    color:white;
    border: solid black 1px; 
-   height: 350px;
+   height: 275px;
    width: 650px;
 
  }
