@@ -30,7 +30,7 @@ pic.addEventListener('mouseover', current);
 pic.addEventListener('mouseout', current);
 
 function current(e) {  
-  const event = 'React-Redux Forum Site'
+  const event = 'Learning GraphQL'
   if (e.type === 'mouseout') {
     const span = document.querySelector('.current')
     document.body.removeChild(span);
@@ -38,7 +38,7 @@ function current(e) {
   
   const ele = document.createElement('div');
   ele.classList.add('current');
-  ele.innerHTML = `<span>Working On: ${event}.</span>`
+  ele.innerHTML = `<span>Working On: ${event}</span>`
   document.body.appendChild(ele);
   const horizon = e.pageX + 15;
   const vert = e.pageY + -50;
