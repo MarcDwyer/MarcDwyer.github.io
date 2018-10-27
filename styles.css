@@ -119,11 +119,11 @@ body {
 }
 
 .card1 {
-    order: 1;
+    order: 2;
     width: 22%;
 }
 .card2 {
-    order: 2;
+    order: 1;
     width: 22%;
 
 }
@@ -159,6 +159,9 @@ body {
   margin-top: 15px;
   text-align: center;
   opacity: 0.7;
+}
+.content  {
+  text-align: center;
 }
 .social * {
   font-size: 25px;
@@ -234,11 +237,11 @@ body {
 
 @media only screen and (max-width: 1300px) {
   .card1 {
-    order:0;
+    order:1;
     width: 50%;
   }
   .card2 {
-    order:1;
+    order:0;
     width: 50%;
   }
   .card3 {
