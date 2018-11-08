@@ -115,20 +115,29 @@ body {
 }
 
 .card1 {
-    order: 2;
+    order: 1;
     width: 22%;
 }
 .card2 {
-    order: 1;
+    order: 2;
     width: 22%;
 
 }
 .card3 {
-    order: 4;
+    order: 3;
     width: 22%;
 }
 .card4 {
-  order: 3;
+  order: 5;
+  width: 22%;
+}
+.card5 {
+  order: 4;
+  width: 22%;
+  animation: pulse 4s linear infinite;
+}
+.card6 {
+  order: 6;
   width: 22%;
 }
 .aboutme {
@@ -222,7 +231,7 @@ body {
   top: 0;
   z-index: 2;
   transition: top 0.5s;
-  
+
 }
 
 .marginme * {
@@ -233,19 +242,27 @@ body {
 
 @media only screen and (max-width: 1300px) {
   .card1 {
-    order:1;
-    width: 50%;
-  }
-  .card2 {
     order:0;
     width: 50%;
   }
+  .card2 {
+    order:1;
+    width: 50%;
+  }
   .card3 {
-    order: 3;
+    order: 2;
     width: 50%;
   }
   .card4 {
-    order: 2;
+    order: 4;
+    width: 50%;
+  }
+  .card5 {
+    order: 3;
+    width: 50%;
+  }
+  .card6 {
+    order: 5;
     width: 50%;
   }
 }
@@ -262,6 +279,9 @@ body {
   .card4 {
     width: 100%;
   }
+  .card5 {
+    width: 100%;
+  }
 }
 
 .current {
@@ -273,12 +293,12 @@ body {
   width: 175px;
 }
 .theterminal {
-  margin: 25px auto 15px;  
+  margin: 25px auto 15px;
    background-color: black;
    opacity: .85;
    border-radius: 10px;
    color:white;
-   border: solid black 1px; 
+   border: solid black 1px;
    height: 275px;
    width: 650px;
 
@@ -320,5 +340,5 @@ body {
 .wut a {
   color: inherit;
   opacity: .95;
-  
+
 }
