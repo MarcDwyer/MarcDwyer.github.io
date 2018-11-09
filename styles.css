@@ -94,7 +94,7 @@ body {
 
 .content1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 55px;
     width: 90%;
     text-align: center;
@@ -218,7 +218,13 @@ body {
 }
 }
 
-@media only screen and (max-width: 1350px) {
+
+@media (max-width: 1900px) {
+  .content1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1500px) {
 .content1 {
   grid-template-columns: repeat(2, 1fr);
 }
