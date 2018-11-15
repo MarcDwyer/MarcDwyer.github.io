@@ -62,8 +62,7 @@ body {
   transition: transform 1s;
   overflow-y: scroll;
 }
-.card5 {
-
+.shadowme {
     box-shadow: 0 0 65px hsla(226, 50%, 50%, 0.58);
 }
 @keyframes pulse {
