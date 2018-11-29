@@ -110,11 +110,8 @@ body {
   width: 100%;
 }
 .card {
-  margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
     max-width: 550px;
+    margin: 15px auto 15px auto;
   border: none;
 }
 
