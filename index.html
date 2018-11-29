@@ -45,22 +45,8 @@
     <h2>Featured Projects</h2>
     <span><small>These projects are in chronological order. The code hasnt been changed. So you can see how my code has progressed.</small></span>
       <div class="content1">
-        <div class="card card2 mt-4">
-            <img class="card-img-top" src="images/memory.PNG">
-            <div class="card-body">
-            <h5 class="card-title">Project: A Game of Memory</h5>
-            <p class="card-text">
-                This was my very first serious project. The project was tasked to me when taking Udacity's Front End
-                Web Dev course. It being my first, I ended up using jQuery, even still, the code is unnecessarily convoluted. I like to
-                look back on this project from time to time to see how far I've progressed in the 8 months I've been programming.
-            </p>
-          </div>
-          <div class="mb-2"><span><strong>Stack: HTML5, CSS3, Javascript, Jquery</strong></span></div>
-          <a target="_blank" href="https://github.com/RealRedChief/GameofMemory" class="btn">Project Repo</a>
-          <a target="_blank" href="https://mygameofmemory.herokuapp.com/ " class="btn btn-primary">Visit the App!</a>
-        </div>
           <div class="card card1 mt-4 seey">
-              <img class="card-img-top" src='images/newpls.jpg'>
+              <img class="card-img-top" src='images/fetcherv2.jpg'>
               <div class="card-body">
              <h5 class="card-title">Fetcherapp.net v1</h5>
               <p class="card-text"> Fetcherapp does as the name implies, fetches data from Youtube's API notifying
@@ -70,18 +56,34 @@
                 incredibly fun and gave me an idea of what my next project would be.
               </p>
           </div>
-          <div class="mb-2"><span><strong>Stack: HTML5, CSS3, Javascript, NodeJS</strong></span></div>
+          <div class="mb-2"><span><strong>Stack: Express, React, Redux, NodeJS</strong></span></div>
           <a target="_blank" href="https://github.com/RealRedChief/Youtube-Livestream-App" class="btn">Project Repo</a>
           <a target="_blank" href="https://youtubenodetime.herokuapp.com/" class="btn btn-primary">Visit the App!</a>
+          </div>
+          <div class="card card5 mt-4 shadowme">
+              <img src="images/twitchclone-min.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Project: Fetcherapp.net v2</h5>
+                  <h6><strong>Latest Project</strong></h6>
+                  <p class="card-text"> The goal of this project was to make the UI a little more user friendly and minimize the app footprint in comparison to v1.
+                      In v1, I used redux which although a wonderful tool, wasnt really necessary for this application. Everything in this app could've used in local state
+                      and make for a smaller footprint. Also, the UI doesnt need to change to view a video (as it did in v1). All the data should be viewed on a single page
+                      for a better UI. Doing all of this, I managed to reduce the file size by about 100kb, and make for a much more enjoyable UX.
+                  </p>
+              </div>
+              <div class="mb-2"><span><strong>Stack: Express, React, NodeJS</strong></span></div>
+              <a target="_blank" href="https://github.com/MarcDwyer/YoutubeonNodeV2" class="btn">Project Repo</a>
+              <a target="_blank" href="https://www.fetcherapp.net/" class="btn btn-primary">Visit the App!</a>
           </div>
           <div class="card card3 mt-4 shadowme">
             <img src="images/forum.png" alt="" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">Project: A Reddit Clone V3</h5>
                 <p class="card-text">
-                  I chose to build this project because I really desired to work/learn the backend. Creating an API and using Authentication has always
-                  been something that interested since finishing my Youtube project. I really wanted to know how the backend works, and found it fascinating. So thats
-                  what I attempted to do with this project. I learned how to use MongoDB for my database as well as Passport.JS to authenticate users with Google+.
+                    The goal for this project was to mimick Reddits behavior as well as UI. I can only to guess what Reddit uses stack-wise. I figured GraphQL would be great as I can prevent the user from being served
+                    the comments on page load (as it is unnecessary). So I used GraphQL on the backend as well as Apollo Client on the front-end. Apollo Client was a massive headache for me to learn, however I pulled through and am
+                    very comfortable using it (and enjoy it). This app also uses JWT's as well as Oauth for authentication. Yes, passwords are encrypted and stored in mongodb. Using Apollo Client, GraphQL, and JWTS for the first time was
+                    incredibly difficult but I managed to pull through. All in all, this app made me a far better developer and was/is incredibly fun to make. I do intend on implementing new features in the future.
                 </p>
 
             </div>
@@ -90,19 +92,6 @@
             <a target="_blank" href="https://github.com/MarcDwyer/New-Graphql-repo" class="btn">Project Repo</a>
             <a target="_blank" href="https://forumsite1234.herokuapp.com/" class="btn btn-primary">Visit the App!</a>
             </div>
-                <div class="card card5 mt-4 shadowme">
-                    <img src="images/fetcherv2.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Project: Fetcherapp.net v2</h5>
-                        <h6><strong>Latest Project</strong></h6>
-                        <p class="card-text"> Wanted to make a React-Redux version version of my Youtube Livestream app. I really enjoy this project as I use it on a daily basis.
-                          Im quite amazed at how much fun I have using React. Looking forward to getting better.
-                        </p>
-                    </div>
-                    <div class="mb-2"><span><strong>Stack: Express, React/Redux, NodeJS</strong></span></div>
-                    <a target="_blank" href="https://github.com/MarcDwyer/YoutubeonNodeV2" class="btn">Project Repo</a>
-                    <a target="_blank" href="https://www.fetcherapp.net/" class="btn btn-primary">Visit the App!</a>
-                    </div>
                     <div class="card card6 mt-4">
                       <img src="images/livechat.PNG" alt="" class="card-img-top">
                       <div class="card-body">

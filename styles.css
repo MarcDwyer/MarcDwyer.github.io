@@ -93,7 +93,7 @@ body {
 
 .content1 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 55px;
     width: 90%;
     text-align: center;
@@ -114,6 +114,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+    max-width: 550px;
   border: none;
 }
 
@@ -220,12 +221,12 @@ body {
 
 @media (max-width: 1900px) {
   .content1 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1270px) {
 .content1 {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 }
 @media only screen and (max-width: 900px) {
