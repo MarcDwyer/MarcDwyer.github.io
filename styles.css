@@ -94,7 +94,7 @@ body {
 .content1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 55px;
+    column-gap: 5px;
     width: 90%;
     text-align: center;
     border-bottom: solid #E1E1E1 1px;
