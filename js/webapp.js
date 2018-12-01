@@ -30,7 +30,7 @@ pic.addEventListener('mouseover', current);
 pic.addEventListener('mouseout', current);
 
 function current(e) {  
-  const event = 'Learning GraphQL'
+  const event = 'Code Fights'
   if (e.type === 'mouseout') {
     const span = document.querySelector('.current')
     document.body.removeChild(span);
@@ -51,7 +51,7 @@ function current(e) {
 
 function typed() {
   new Typed(document.querySelector('.terminal'), {
-    strings: ['$ npm install marc-port-about^1000\n <br>`installing components...` ^1000\n <br>`Fetching from source...` <br><br>Name: Marc Dwyer <br> Specialty: Front End Development <br> Current Projects: 5 <br> Recently Finished: Stephen Griders React-Redux Udemy Course <br> Currently Working On: Finding a place to Work!'],
+    strings: ['$ npm install marc-port-about^1000\n <br>`installing components...` ^1000\n <br>`Fetching from source...` <br><br>Name: Marc Dwyer <br> Specialty: Front End Development <br> Current Projects: 5 <br> Recently Finished: Twitch Clone Project <br> Currently Working On: Finding a place to Work!'],
     typeSpeed: 30,
   })
 }
