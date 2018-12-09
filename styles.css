@@ -167,7 +167,9 @@ body {
   background-color: #A79BCB;
   color: white;
 }
-
+.mybtn:hover {
+  color: #eee;
+}
 @media only screen and (max-width: 850px) {
   .para {
     width: 350px;
