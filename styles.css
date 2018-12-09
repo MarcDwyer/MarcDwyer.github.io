@@ -163,6 +163,10 @@ body {
   margin-left: auto;
   width: 650px;
 }
+.mybtn {
+  background-color: #A79BCB;
+  color: white;
+}
 
 @media only screen and (max-width: 850px) {
   .para {
@@ -171,16 +175,27 @@ body {
 .con {
   height: 100%;
 }
+.wut {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
 .intro {
   position: fixed;
   margin-top: 0;
   top: 0;
+  flex-wrap: nowrap;
   left: 0;
   width: 0;
   z-index: 1;
-  height: 100%;
+  height: 100vh;
   background-color:rgba(250, 250, 250, 0.5);
   overflow: hidden;
+}
+.gopher {
+margin-left: auto;
+margin-right: auto;
 }
 .active {
   background-color:rgba(250, 250, 250);
@@ -273,7 +288,10 @@ body {
 .typed-cursor {
   display:none;
 }
-
+.gopher {
+  width: 125px;
+  height: 125px;
+}
 @media only screen and (max-width: 650px) {
   .theterminal {
     width: 350px;

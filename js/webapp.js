@@ -30,7 +30,7 @@ pic.addEventListener('mouseover', current);
 pic.addEventListener('mouseout', current);
 
 function current(e) {  
-  const event = 'Code Fights'
+  const event = 'Learning Golang'
   if (e.type === 'mouseout') {
     const span = document.querySelector('.current')
     document.body.removeChild(span);
