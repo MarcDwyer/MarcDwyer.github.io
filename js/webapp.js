@@ -60,6 +60,7 @@ typed();
 document.querySelector('.abt').addEventListener('click', scroller);
 
 
-function scroller() {
-  content.scrollTo(0, content.offsetHeight)
+function scroller(e) {
+  console.log(this)
+  document.querySelector('.actualabout').scrollIntoView({behavior: "smooth"});
 }
